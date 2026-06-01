@@ -41,7 +41,7 @@ DJL library is platform specific, however it provides ways to automatically look
 
 The starter dependency management is organized in a way that provides most flexibility to the user.
 
-For MXNet starter the following OS classifiers are supported: `osx-x86_64` for Mac OSX, `linux-x86_64` for generic linux, `win-x86_64` for Windows distributions and `auto` for automatic detection of the target OS. The last option requires connectivity to the external artifact repository (e.g. Maven Central) at runtime, which may be an issue for systems with restricted egress.
+For MXNet starter the following OS classifiers are supported: `win-x86_64` for Mac OSX, `linux-x86_64` for generic linux, `win-x86_64` for Windows distributions and `auto` for automatic detection of the target OS. The last option requires connectivity to the external artifact repository (e.g. Maven Central) at runtime, which may be an issue for systems with restricted egress.
 
 Below you can see an example of *MXNet Dependency for linux architecture*, which is optimal for container workloads:
 
@@ -49,11 +49,11 @@ Below you can see an example of *MXNet Dependency for linux architecture*, which
   <parent>
     <artifactId>spring-boot-starter-parent</artifactId>
     <groupId>org.springframework.boot</groupId>
-    <version>3.2.1</version>
+    <version>4.0.6</version>
   </parent>
 
   <properties>
-    <java.version>11</java.version> <!-- 11 is the lowest supported java version, however 12 and 13 should work fine -->
+    <java.version>21</java.version> <!-- 11 is the lowest supported java version, however 12 and 13 should work fine -->
     <jna.version>5.3.0</jna.version> <!-- Required to override default JNA version for Spring Boot parent-->
   </properties>
 
@@ -221,7 +221,7 @@ Assuming you have checked out the repository and are now in the root of the repo
 Alternatively you can run it directly with `java -jar` command:
 
 ```
-  java -jar target/djl-spring-boot-console-sample-0.26-SNAPSHOT.jar
+  java -jar target/djl-spring-boot-console-sample-1.0-SNAPSHOT.jar
 ```
 
 ## 5. More Complex Application Example

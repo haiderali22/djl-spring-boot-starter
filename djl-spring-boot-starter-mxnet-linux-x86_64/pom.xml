@@ -4,7 +4,7 @@
   <parent>
     <groupId>ai.djl.spring</groupId>
     <artifactId>djl-spring-boot-starter-parent</artifactId>
-    <version>0.26-SNAPSHOT</version>
+    <version>1.0-SNAPSHOT</version>
     <relativePath>../djl-spring-boot-starter-parent</relativePath>
   </parent>
   <artifactId>djl-spring-boot-starter-mxnet-linux-x86_64</artifactId>
@@ -41,7 +41,7 @@
       <classifier>linux-x86_64</classifier>
       <!--
       supported classifier:
-      <classifier>osx-x86_64</classifier>
+      <classifier>win-x86_64</classifier>
       <classifier>linux-x86_64</classifier>
       <classifier>win-x86_64</classifier>
       -->

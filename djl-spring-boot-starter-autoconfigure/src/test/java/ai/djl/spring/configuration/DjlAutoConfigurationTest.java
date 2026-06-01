@@ -158,15 +158,13 @@ public class DjlAutoConfigurationTest {
             int height = 512;
             double threshold = 0.1d;
 
-            Pipeline pipeline = new Pipeline();
-            pipeline.add(new Resize(width, height)).add(new ToTensor());
-
-            return SingleShotDetectionTranslator.builder()
-                    .setPipeline(pipeline)
-                    .optSynsetArtifactName("classes.txt")
-                    .optThreshold((float) threshold)
-                    .optRescaleSize(width, height)
-                    .build();
+          return SingleShotDetectionTranslator.builder()
+              .addTransform(new Resize(width, height))
+              .addTransform(new ToTensor())
+              .setImageSize(width, height)
+              .optSynsetArtifactName("classes.txt")
+              .optThreshold((float) threshold)
+              .build();
         }
     }
 }

@@ -25,7 +25,7 @@ The starter configures dependencies using either platform-specific or automatic 
 
     <dependency>
         <groupId>ai.djl.spring</groupId>
-        <artifactId>djl-spring-boot-starter-mxnet-osx-x86_64</artifactId>
+        <artifactId>djl-spring-boot-starter-mxnet-win-x86_64</artifactId>
         <version>${djl.starter.version}</version>
     </dependency>
 
