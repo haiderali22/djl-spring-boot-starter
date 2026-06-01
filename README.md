@@ -21,7 +21,7 @@ The starter configures dependencies using either platform-specific or automatic 
 
 #### MXNet Configuration
 
-**MXNet for OSX**
+**MXNet for WIN**
 
     <dependency>
         <groupId>ai.djl.spring</groupId>
